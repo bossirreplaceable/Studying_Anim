@@ -1,10 +1,10 @@
-<com.yobo.studying_anim.discrollview.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.yobo.studying_anim.lsn24_anim_discrollview.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:discrollve="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.yobo.studying_anim.discrollview.DiscrollViewContent
+    <com.yobo.studying_anim.lsn24_anim_discrollview.DiscrollViewContent
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -74,6 +74,6 @@
             android:src="@drawable/a_camera"
             discrollve:discrollve_translation="fromLeft|fromBottom" />
 
-    </com.yobo.studying_anim.discrollview.DiscrollViewContent>
+    </com.yobo.studying_anim.lsn24_anim_discrollview.DiscrollViewContent>
 
-</com.yobo.studying_anim.discrollview.DiscrollView>
+</com.yobo.studying_anim.lsn24_anim_discrollview.DiscrollView>

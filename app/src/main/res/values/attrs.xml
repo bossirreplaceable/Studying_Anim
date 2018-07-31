@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <declare-styleable name="DiscrollView_LayoutParams">
-        <attr name="discrollve_alpha" format="boolean"/>
-        <attr name="discrollve_scaleX" format="boolean"/>
-        <attr name="discrollve_scaleY" format="boolean"/>
-        <attr name="discrollve_fromBgColor" format="color"/>
-        <attr name="discrollve_toBgColor" format="color"/>
-        <attr name="discrollve_translation"/>
+        <attr name="discrollve_alpha" format="boolean" />
+        <attr name="discrollve_scaleX" format="boolean" />
+        <attr name="discrollve_scaleY" format="boolean" />
+        <attr name="discrollve_fromBgColor" format="color" />
+        <attr name="discrollve_toBgColor" format="color" />
+        <attr name="discrollve_translation" />
     </declare-styleable>
 
     <attr name="discrollve_translation">
@@ -15,4 +15,17 @@
         <flag name="fromLeft" value="0x04" />
         <flag name="fromRight" value="0x08" />
     </attr>
+
+    <attr name="a_in" format="float" />
+
+    <attr name="a_out" format="float" />
+
+    <attr name="x_in" format="float" />
+
+    <attr name="x_out" format="float" />
+
+    <attr name="y_in" format="float" />
+
+    <attr name="y_out" format="float" />
+
 </resources>

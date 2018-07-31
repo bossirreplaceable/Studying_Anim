@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lsn24_anim_discrollview.A_Activity"/>
+        <activity android:name=".lsn25_anim_parallaxsplash.SplashActivity"/>
     </application>
 
 </manifest>
