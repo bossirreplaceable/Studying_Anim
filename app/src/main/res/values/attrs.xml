@@ -28,4 +28,9 @@
 
     <attr name="y_out" format="float" />
 
+
+    <declare-styleable name="CircleImageView">
+        <attr name="my_src" format="reference" />
+    </declare-styleable>
+
 </resources>

@@ -2,25 +2,120 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="blurMaskFilter"
+            android:textColor="@color/white"
+            android:text="模糊遮罩效果" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="rgbFilter"
+            android:textColor="@color/white"
+            android:text="RGB滤镜" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickCanvas"
+            android:textColor="@color/white"
+            android:text="Canvas高级" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_bt_a"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickAnim1"
+            android:text="动画框架1" />
+
+        <Button
+            android:id="@+id/main_bt_b"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="clickAnim2"
+            android:text="动画框架2" />
+
+        <Button
+            android:id="@+id/main_bt_d"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="slideMenu"
+            android:text="侧滑菜单" />
+
+        <Button
+            android:id="@+id/main_bt_d1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="slideDelete"
+            android:text="滑动删除" />
 
 
-    <Button
-        android:id="@+id/main_bt_a"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
-        android:onClick="clickAnim1"
-        android:text="动画框架1" />
-    <Button
-        android:id="@+id/main_bt_b"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:background="@color/colorAccent"
-        android:onClick="clickAnim2"
-        android:text="动画框架2" />
+        <Button
+            android:id="@+id/main_bt_d2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="clickPaint"
+            android:text="画笔动画" />
 
+        <Button
+            android:id="@+id/main_f_circle"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="circlePic"
+            android:text="圆形头像，歌词" />
+
+        <Button
+            android:id="@+id/main_f_zoom"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="zoomImage"
+            android:text="放大镜" />
+
+        <Button
+            android:id="@+id/main_f_gradient"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="gradient"
+            android:text="环形，梯形，混合" />
+
+    </LinearLayout>
 
 </LinearLayout>

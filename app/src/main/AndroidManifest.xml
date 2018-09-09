@@ -9,15 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lsn29_scroll_qqmenu.D_Activity1">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lsn24_anim_discrollview.A_Activity"/>
-        <activity android:name=".lsn25_anim_parallaxsplash.SplashActivity"/>
+        <activity android:name=".lsn24_anim_discrollview.A_Activity" />
+        <activity android:name=".lsn25_anim_parallaxsplash.SplashActivity" />
+        <activity android:name=".lsn29_scroll_qqmenu.D_Activity" />
+        <activity android:name=".lsn29_scroll_qqmenu.D_Activity1" />
+        <activity android:name=".lsn29_scroll_qqmenu.D_Activity2" />
+        <activity android:name=".lsn31_shaper.F_Activity"/>
+        <activity android:name=".lsn31_shaper.F1_Activity"/>
+        <activity android:name=".lsn31_shaper.F2_Activity"/>
+        <activity android:name=".lsn32_maskfilter.G_Activity"/>
+        <activity android:name=".lsn32_maskfilter.G_RGB_Activity"/>
+        <activity android:name=".lsn33_canvas.H_Activity"/>
     </application>
 
 </manifest>
