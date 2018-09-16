@@ -27,6 +27,9 @@
         <activity android:name=".lsn32_maskfilter.G_Activity"/>
         <activity android:name=".lsn32_maskfilter.G_RGB_Activity"/>
         <activity android:name=".lsn33_canvas.H_Activity"/>
+        <activity android:name=".lsn34_canvas2.I_Activity"/>
+        <activity android:name=".lsn34_canvas_searchview.J_Activity"/>
+        <activity android:name=".lsn35_wave_path.K_Activity"/>
     </application>
 
 </manifest>

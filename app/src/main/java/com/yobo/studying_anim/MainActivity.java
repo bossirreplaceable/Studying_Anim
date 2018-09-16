@@ -1,6 +1,7 @@
 package com.yobo.studying_anim;
 
 import android.content.Intent;
+import android.icu.util.JapaneseCalendar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,9 @@ import com.yobo.studying_anim.lsn31_shaper.F_Activity;
 import com.yobo.studying_anim.lsn32_maskfilter.G_Activity;
 import com.yobo.studying_anim.lsn32_maskfilter.G_RGB_Activity;
 import com.yobo.studying_anim.lsn33_canvas.H_Activity;
+import com.yobo.studying_anim.lsn34_canvas2.I_Activity;
+import com.yobo.studying_anim.lsn34_canvas_searchview.J_Activity;
+import com.yobo.studying_anim.lsn35_wave_path.K_Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -116,8 +120,20 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, H_Activity.class);
         startActivity(intent);
     }
+    public void clickCanvas1(View v) {
+        Intent intent = new Intent(this, I_Activity.class);
+        startActivity(intent);
+    }
     public void rgbFilter(View v) {
         Intent intent = new Intent(this, G_RGB_Activity.class);
+        startActivity(intent);
+    }
+    public void searchView(View v){
+        Intent intent=new Intent(this, J_Activity.class);
+        startActivity(intent);
+    }
+    public void waveView(View v){
+        Intent intent=new Intent(this, K_Activity.class);
         startActivity(intent);
     }
 }

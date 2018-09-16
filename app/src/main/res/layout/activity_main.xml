@@ -15,8 +15,8 @@
             android:layout_margin="10dp"
             android:background="@color/colorPrimary"
             android:onClick="blurMaskFilter"
-            android:textColor="@color/white"
-            android:text="模糊遮罩效果" />
+            android:text="模糊遮罩效果"
+            android:textColor="@color/white" />
 
         <Button
             android:layout_width="120dp"
@@ -24,8 +24,8 @@
             android:layout_margin="10dp"
             android:background="@color/colorPrimary"
             android:onClick="rgbFilter"
-            android:textColor="@color/white"
-            android:text="RGB滤镜" />
+            android:text="RGB滤镜"
+            android:textColor="@color/white" />
 
         <Button
             android:layout_width="120dp"
@@ -33,9 +33,35 @@
             android:layout_margin="10dp"
             android:background="@color/colorPrimary"
             android:onClick="clickCanvas"
-            android:textColor="@color/white"
-            android:text="Canvas高级" />
+            android:text="Canvas高级"
+            android:textColor="@color/white" />
 
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickCanvas1"
+            android:text="Canvas实践"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="searchView"
+            android:text="搜索动画View"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="waveView"
+            android:text="波浪充电"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -115,6 +141,7 @@
             android:background="@color/colorAccent"
             android:onClick="gradient"
             android:text="环形，梯形，混合" />
+
 
     </LinearLayout>
 

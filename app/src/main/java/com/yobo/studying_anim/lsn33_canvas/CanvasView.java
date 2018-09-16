@@ -91,47 +91,53 @@ public class CanvasView extends View {
 
         //--------------------Canvas变换技巧--------------------------
         //1.平移（Translate）
-		RectF r = new RectF(0, 220, 400, 400);
+		RectF r = new RectF(0, 250, 300, 400);
 		canvas.drawRect(r, paint);
-		paint.setColor(Color.BLUE);
 		//将画布平移
-		canvas.translate(50, 50);
+		canvas.translate(90, 50);
+		paint.setColor(Color.RED);
 		//当canvas执行drawXXX的时候就会新建一个新的画布图层
 		canvas.drawRect(r, paint);
 
-		RectF r2 = new RectF(0, 220, 400, 500);
-		paint.setColor(Color.RED);
+		RectF r2 = new RectF(0, 250, 300, 400);
+        paint.setColor(Color.BLUE);
 //虽然新建了一个画布图层，但是还是会沿用之前设置的平移变换。不可逆的。（save和restore来解决）
 		canvas.drawRect(r2, paint);
+
+
         //2.缩放Scale
-		RectF r3 = new RectF(600, 220, 900, 500);
+		RectF r3 = new RectF(600, 250, 900, 500);
 		canvas.drawRect(r3, paint);
 		paint.setColor(Color.BLUE);
 //        sx,sy：分别对x/y方向的一个缩放系数,画布的缩放会导致里面所有的绘制的东西都会有一个缩放效果
-		canvas.scale(1.5f, 0.5f);
+		canvas.scale(0.5f, 0.5f);
+        paint.setColor(Color.BLUE);
 		canvas.drawRect(r3, paint);
-//
+
+
+        canvas.scale(2f, 2f);
 //        3.旋转Rotate
-		RectF r4 = new RectF(0, 550, 300, 900);
+		RectF r4 = new RectF(0, 600, 300, 900);
 		canvas.drawRect(r4, paint);
+		paint.setColor(Color.RED);
+		canvas.rotate(45, 150, 750);
 		paint.setColor(Color.BLUE);
-		canvas.rotate(45);
-		canvas.rotate(45, 150, 725);
 		canvas.drawRect(r4, paint);
 
+        canvas.rotate(-45, 150, 750);
         //4.斜拉画布Skew
-		RectF r5 = new RectF(350, 920, 750, 1200);
+		RectF r5 = new RectF(400, 600, 750, 1000);
 		canvas.drawRect(r5, paint);
 		paint.setColor(Color.BLUE);
 		//sx,sy倾斜度：X轴方向上倾斜60度，tan60=根号3
 		canvas.skew(1.73f, 0);
 		canvas.drawRect(r5, paint);
         //5.裁剪画布clip
-//        RectF r6 = new RectF(200, 200, 400, 500);
-//        canvas.drawRect(r6, paint);
-//        paint.setColor(Color.BLUE);
-//        canvas.clipRect(new Rect(250, 250, 300, 400));
-//        canvas.drawColor(Color.YELLOW);
+        RectF r6 = new RectF(0, 1000, 400, 1400);
+        canvas.drawRect(r6, paint);
+        paint.setColor(Color.BLUE);
+        canvas.clipRect(new Rect(0, 1000, 200, 1200));
+        canvas.drawColor(Color.YELLOW);
 
 
     }
